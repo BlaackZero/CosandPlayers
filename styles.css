@@ -1,0 +1,243 @@
+*, html  {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+div  {
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing:  border-box;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+/* 
+
+Color  Naranjo : #ef782d
+Color Rosa: #d94285
+*/
+
+/* SECCION CLASESSS */
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.container-nav {
+    width: 100px;
+}
+
+.absolute {
+    position: absolute;
+    padding-left: 3rem;
+}
+
+.links-nav {
+    padding-top: 50px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+}
+
+.center-aling {
+    align-items: center;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.logo {
+   height: 120px;
+   max-height: 120px;
+   width: 155px;
+   max-width: 155px;
+}
+
+.a-nav {
+    margin-right: 4rem;
+    color: #ef782d;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.section-vid {
+    width: 100%;
+}
+
+.title-video {
+    position: absolute;
+    top: 20%;
+}
+
+.texto-video {
+    font-size: 60px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-font-smoothing: antialiased;
+    color: #ef782d;
+}
+
+.video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.container-info {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 1690px;
+    background-color: #ef782d;
+    height: 430px;
+    border-radius: 30px;
+}
+
+.container-talents {
+    width: 1690px;
+    padding-bottom: 2rem;
+}
+
+.titleinfo {
+    color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.talentostitle {
+    color: #d94285;
+}
+
+.talento-title-box {
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+}
+
+.talent-box {
+    width: 430px;
+    height: 480px;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.img-box {
+    width: 430px;
+    height: 480px;
+    border-radius: 30px;
+    border: none;
+    background-color:rgba(0,0,0,0.6);
+    opacity:1;
+    transition: all 0.5s;
+}
+
+.name-talent {
+    color: #d94285;
+    padding-top: 1rem;
+}
+
+.flex-center-talents {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+.logo-footer {
+    width: 100px;
+}
+
+.info-box {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    z-index: 9999;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    user-select: none;
+    pointer-events: none;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hab1 {
+    padding-left: 2rem;
+    padding-right: 3rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hab2 {
+    padding-left: 8rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.logoinfo {
+    width: 30px;
+}
+
+.quant {
+    padding-left: 5px;
+}
+
+.footer  {
+    margin-top: 10rem;
+    width: 100%;
+    height: 140px;
+    background-color: #ef782d;
+}
+/* 
+
+Animacioness!!! 
+
+*/
+
+.a-nav:hover {
+    color: #d94285;
+}
+
+.img-box:hover {
+    opacity:0.2;
+}
+
+.talent-box:hover .hab1,
+.talent-box:hover .hab2 {
+  opacity: 1;
+}
