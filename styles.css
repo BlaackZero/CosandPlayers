@@ -1,13 +1,13 @@
 *, html  {
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
 div  {
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
     box-sizing:  border-box;
 }
 
@@ -36,13 +36,9 @@ Color Rosa: #d94285
     justify-content: center;
 }
 
-.container-nav {
-    width: 100px;
-}
-
 .absolute {
     position: absolute;
-    padding-left: 3rem;
+    left: 3%;
 }
 
 .links-nav {
@@ -135,23 +131,25 @@ Color Rosa: #d94285
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 430px));
+    grid-gap: 20px;
     grid-row-gap: 100px;
+    justify-content: center;
 }
 
 .talent-box {
-    width: 430px;
+    max-width: 430px;
     height: 480px;
     border-radius: 30px;
     background-color: black;
     border: none;
     position: relative;
-    z-index: 1;
+    width: 100%;
 }
 
 .img-box {
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
     height: 480px;
     border-radius: 30px;
     border: none;
@@ -182,7 +180,6 @@ Color Rosa: #d94285
     position: absolute;
     top: 40%;
     left: 3%;
-    z-index: 9999;
     color: white;
     font-size: 24px;
     font-weight: 300;
@@ -241,3 +238,9 @@ Animacioness!!!
 .talent-box:hover .hab2 {
   opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
