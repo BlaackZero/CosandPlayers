@@ -79,6 +79,7 @@ Color Rosa: #d94285
     padding-left: 2rem;
     padding-top: 2rem;
     max-width: 1100px;
+    padding-bottom: 3rem;
 }
 
 .sticky {
@@ -110,13 +111,17 @@ Color Rosa: #d94285
     object-fit: cover;
 }
 
+.container {
+    width: 1690px;
+}
+
 .container-info {
     margin-top: 3rem;
     margin-bottom: 2rem;
     max-width: 1690px;
     width: 100%;
     background-color: #ef782d;
-    height: 430px;
+    height: 100%;
     border-radius: 30px;
     position: relative;
 }
@@ -162,6 +167,7 @@ Color Rosa: #d94285
     border: none;
     position: relative;
     width: 100%;
+    cursor: pointer;
 }
 
 .img-box {
@@ -260,5 +266,9 @@ Animacioness!!!
 
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    }
+
+    .cospng {
+        display: none;
     }
 }
