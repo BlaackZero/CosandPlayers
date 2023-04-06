@@ -38,7 +38,7 @@ Color Rosa: #d94285
 
 .absolute {
     position: absolute;
-    left: 3%;
+    left: 5%;
 }
 
 .links-nav {
@@ -58,6 +58,7 @@ Color Rosa: #d94285
     width: 100%;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.87);
+    position: relative;
 }
 
 .logo {
@@ -68,7 +69,6 @@ Color Rosa: #d94285
 }
 
 .a-nav {
-    margin-right: 4rem;
     color: #ef782d;
     font-size: 20px;
 }
@@ -116,6 +116,11 @@ Color Rosa: #d94285
 .container {
     width: 1690px;
 }
+
+.container-nav {
+    width: 1690px;
+}
+
 
 .container-info {
     margin-top: 3rem;
