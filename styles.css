@@ -78,6 +78,7 @@ Color Rosa: #d94285
     font-weight: 300;
     color: white;
     padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 2rem;
     max-width: 1100px;
     padding-bottom: 3rem;
@@ -118,7 +119,7 @@ Color Rosa: #d94285
 
 .container-info {
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     max-width: 1690px;
     width: 100%;
     background-color: #ef782d;
@@ -129,7 +130,6 @@ Color Rosa: #d94285
     margin-right: 3rem;
     backface-visibility: hidden;
     transform: translateZ(0);
-    -webkit-font-smoothing: subpixel-antialiased;
     transition: all 0.3s;
 }
 
@@ -162,10 +162,11 @@ Color Rosa: #d94285
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 430px));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     grid-row-gap: 100px;
     justify-content: center;
+    justify-items: center;
 }
 
 .talent-box {
@@ -180,9 +181,9 @@ Color Rosa: #d94285
 }
 
 .img-box {
-    max-width: 430px;
+    object-fit: cover;
     width: 100%;
-    height: 480px;
+    height: 100%;
     border-radius: 30px;
     border: none;
     background-color:rgba(0,0,0,0.6);
@@ -250,7 +251,11 @@ Color Rosa: #d94285
     margin-top: 10rem;
     width: 100%;
     height: 140px;
-    background-color: #ef782d;
+}
+
+.logo-footer {
+    padding-top: 1rem;
+    width: 120px;
 }
 /* 
 
@@ -276,17 +281,28 @@ Animacioness!!!
 }
 
 .container-info:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) translate3d( 0, 0, 0);
+    
 }
 
 
 @media (max-width: 600px) {
 
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .cospng {
         display: none;
     }
+
+    .talento-title-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-box {
+        display: none;
+    }
+    
 }
