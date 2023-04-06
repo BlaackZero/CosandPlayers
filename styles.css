@@ -127,11 +127,17 @@ Color Rosa: #d94285
     position: relative;
     margin-left: 3rem;
     margin-right: 3rem;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: all 0.3s;
 }
 
 .container-talents {
     width: 1690px;
     padding-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .cospng {
@@ -264,6 +270,15 @@ Animacioness!!!
 .talent-box:hover .hab2 {
   opacity: 1;
 }
+
+.talent-box:hover {
+    outline: #d94285 4px solid;
+}
+
+.container-info:hover {
+    transform: scale(1.05);
+}
+
 
 @media (max-width: 600px) {
 
