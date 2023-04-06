@@ -75,6 +75,7 @@ Color Rosa: #d94285
 
 .detalle-info {
     font-size: 18px;
+    font-weight: 300;
     color: white;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -124,6 +125,8 @@ Color Rosa: #d94285
     height: 100%;
     border-radius: 30px;
     position: relative;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .container-talents {
