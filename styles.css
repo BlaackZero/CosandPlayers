@@ -70,6 +70,15 @@ Color Rosa: #d94285
 .a-nav {
     margin-right: 4rem;
     color: #ef782d;
+    font-size: 20px;
+}
+
+.detalle-info {
+    font-size: 18px;
+    color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    max-width: 1100px;
 }
 
 .sticky {
@@ -104,15 +113,23 @@ Color Rosa: #d94285
 .container-info {
     margin-top: 3rem;
     margin-bottom: 2rem;
-    width: 1690px;
+    max-width: 1690px;
+    width: 100%;
     background-color: #ef782d;
     height: 430px;
     border-radius: 30px;
+    position: relative;
 }
 
 .container-talents {
     width: 1690px;
     padding-bottom: 2rem;
+}
+
+.cospng {
+    position: absolute;
+    bottom: -1%;
+    left: 75%;
 }
 
 .titleinfo {
@@ -239,8 +256,9 @@ Animacioness!!!
   opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
+
     .grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
     }
-  }
+}
