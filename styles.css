@@ -41,7 +41,6 @@ Color Rosa: #d94285
 .flex {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
 }
 
 .flex-center {
@@ -179,26 +178,6 @@ Color Rosa: #d94285
     margin-bottom: 2rem;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    grid-row-gap: 100px;
-    justify-content: center;
-    justify-items: center;
-}
-
-.talent-box {
-    max-width: 430px;
-    height: 480px;
-    border-radius: 30px;
-    background-color: black;
-    border: none;
-    position: relative;
-    width: 100%;
-    cursor: pointer;
-}
-
 .img-box {
     object-fit: cover;
     width: 270px;
@@ -209,16 +188,6 @@ Color Rosa: #d94285
     transition: all 0.5s;
 }
 
-.name-talent {
-    color: #d94285;
-    padding-top: 1rem;
-}
-
-.flex-center-talents {
-    display: flex;
-    justify-content: center;
-}
-
 .footer {
     margin-top: 5rem;
 }
@@ -227,42 +196,8 @@ Color Rosa: #d94285
     width: 100px;
 }
 
-.info-box {
-    position: absolute;
-    top: 40%;
-    left: 3%;
-    color: white;
-    font-size: 24px;
-    font-weight: 300;
-    user-select: none;
-    pointer-events: none;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.hab1 {
-    padding-left: 2rem;
-    padding-right: 3rem;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.hab2 {
-    padding-left: 8rem;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-}
-
-
 .logoinfo {
     width: 30px;
-}
-
-.quant {
-    padding-left: 5px;
 }
 
 .footer  {
@@ -281,6 +216,44 @@ Color Rosa: #d94285
     background: rgb(239,120,45);
     background: linear-gradient(0deg, rgba(239,120,45,1) 0%, rgba(194,68,125,1) 100%);
     border-radius: 0px 30px 30px 0px;  
+}
+
+.detail-title {
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.detail-talent {
+    padding-left: 1rem;
+    font-weight: 300;
+}
+
+.padd-up  {
+    padding-top: 1rem;
+}
+
+.talent-cont {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.talent-detail {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cont-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d94285;
+    border: white 2px solid;
+    border-radius: 15px;
+    width: 110px;
+    height: 30px;
 }
 /* 
 
