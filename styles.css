@@ -40,12 +40,15 @@ Color Rosa: #d94285
 
 .flex {
     display: flex;
-    align-items: center;
 }
 
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.center {
+    align-items: center;
 }
 
 .absolute {
@@ -234,7 +237,7 @@ Color Rosa: #d94285
 
 .talent-cont {
     padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 10px;
     display: flex;
     gap: 10px;
 }
@@ -243,6 +246,15 @@ Color Rosa: #d94285
     color: white;
     font-size: 18px;
     font-weight: 600;
+}
+
+.box-detail {
+    max-width: 580px;
+}
+
+.flex-title {
+    display: flex;
+    flex-direction: column;
 }
 
 .cont-detail {
@@ -254,6 +266,35 @@ Color Rosa: #d94285
     border-radius: 15px;
     width: 110px;
     height: 30px;
+}
+
+.redes {
+    padding-top: 3rem;
+}
+
+.redes-detail {
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.habilidades-title {
+    font-weight: 600;
+}
+
+.habilidades-cont {
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.redes-detail {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 5rem;
+}
+
+.icon {
+    padding-right: 1rem;
+    text-align: center;
 }
 /* 
 
