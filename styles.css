@@ -132,8 +132,10 @@ Color Rosa: #d94285
 }
 
 .container-nav {
-    width: 1690px;
+    max-width: 1690px;
+    width: 100%;
     align-items: center;
+    padding-right: 1rem;
 }
 
 
@@ -155,10 +157,9 @@ Color Rosa: #d94285
 }
 
 .container-talents {
-    width: 1690px;
+    max-width: 1220px;
+    width: 100%;
     padding-bottom: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
 }
 
 .cospng {
@@ -178,6 +179,7 @@ Color Rosa: #d94285
 }
 
 .talento-title-box {
+    width: 1220px;
     margin-bottom: 2rem;
 }
 
