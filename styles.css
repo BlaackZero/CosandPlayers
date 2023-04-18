@@ -159,7 +159,7 @@ Color Rosa: #d94285
 .container-talents {
     max-width: 1220px;
     width: 100%;
-    padding-bottom: 2rem;
+    border-radius: 30px;
 }
 
 .cospng {
@@ -186,6 +186,7 @@ Color Rosa: #d94285
 .img-box {
     object-fit: cover;
     width: 270px;
+    height: 100%;
     border-radius: 30px 0px 0px 30px;
     border: none;
     background-color:rgba(0,0,0,0.6);
@@ -268,6 +269,9 @@ Color Rosa: #d94285
     border-radius: 15px;
     width: 110px;
     height: 30px;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
 }
 
 .redes {
@@ -298,6 +302,10 @@ Color Rosa: #d94285
     padding-right: 1rem;
     text-align: center;
 }
+
+.space {
+    margin-top: 3rem;
+}
 /* 
 
 Animacioness!!! 
@@ -324,9 +332,16 @@ Animacioness!!!
 
 .container-info:hover {
     transform: scale(1.05) translate3d( 0, 0, 0);
-    
 }
 
+.cont-detail:hover {
+    transform: scale(1.05) translate3d( 0, 0, 0);
+}
+
+.container-talents:hover {
+    outline: #d94285 2px solid;
+    outline-offset: 6px;
+}
 
 @media (max-width: 600px) {
 
