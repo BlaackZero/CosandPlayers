@@ -308,6 +308,10 @@ Color Rosa: #d94285
 .space {
     margin-top: 3rem;
 }
+
+.talent-mobile {
+    display: none;
+}
 /* 
 
 Animacioness!!! 
@@ -347,10 +351,6 @@ Animacioness!!!
 
 @media (max-width: 600px) {
 
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     .cospng {
         display: none;
     }
@@ -370,6 +370,23 @@ Animacioness!!!
 
     .talent-cont{
         width: 90%;
+    }
+
+    .box-detail {
+        display: none;
+    }
+
+    .container-talent-desc {
+        display: none;
+    }
+
+    .img-box {
+        border-radius: 30px;
+    }
+
+    .talent-mobile {
+        display: block;
+        padding-bottom: 10px;
     }
     
 }
