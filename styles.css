@@ -388,5 +388,9 @@ Animacioness!!!
         display: block;
         padding-bottom: 10px;
     }
+
+    .container-talents:hover {
+        outline: none;
+    }
     
 }
